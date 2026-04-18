@@ -1,17 +1,12 @@
 ﻿using System.Text;
-internal class Program
+unsafe internal class Program
 {
     private static void Main(string[] args)
     {
-        dynamic zmienna = 5;
-        Console.WriteLine(zmienna);
-        zmienna = "tekst";
-        Console.WriteLine(zmienna);
+        int a = 5;
+        int* b = &a;
 
-        var zmienna2 = 5;
-        Console.WriteLine(zmienna2);
-        zmienna2 = "tekst";
-        Console.WriteLine(zmienna2);
+        Console.WriteLine(*b);
     }
 
 }
