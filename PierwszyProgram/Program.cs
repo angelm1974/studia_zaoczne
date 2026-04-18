@@ -48,7 +48,11 @@ internal class Program
         Console.WriteLine($"Imię: {imie}");
         StringBuilder sb = new StringBuilder("Hello");
         sb.Append(" World");
+        string  lokalizacja = @"c:\Programy\abc";
+        string  lokalizacja2 = "c:\tProgramy\abc";
         Console.WriteLine(sb.ToString());
+        Console.WriteLine($"Lokalizacja: {lokalizacja}");
+        Console.WriteLine($"Lokalizacja2: {lokalizacja2}");
     }
 
 }
