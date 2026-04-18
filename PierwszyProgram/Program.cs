@@ -1,12 +1,30 @@
-﻿namespace Const
+﻿using System;
+class Program
 {
-    internal class Program
+    public static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            const double Pi = 3.14;
-            Console.WriteLine("Wartość Pi: " + Pi);
-            Pi *=2; // Błąd kompilacji: nie można przypisać wartości do stałej
-        }
+        var a= 2+3;
+        Console.WriteLine("Wynik: " + a);
+        a=3-6;
+        Console.WriteLine("Wynik: " + a);
+        a=3*6;
+        Console.WriteLine("Wynik: " + a);
+        a=3/6;
+        Console.WriteLine("Wynik: " + a);
+        var c =10;
+        c++;
+        Console.WriteLine("Wynik: " + c);
+        c--;
+        Console.WriteLine("Wynik: " + c);
+        c+=5;
+        c-=5;
+        c*=2;
+        c/=4;
+        Console.WriteLine("Wynik: " + c);
+        //Tutaj już metody nie operatrory
+        var b =Math.Pow(3,2);
+        Console.WriteLine("Wynik: " + b);
+        b=Math.Sqrt(9);
+        Console.WriteLine("Wynik: " + b);
     }
-}
+}   
