@@ -3,7 +3,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Zmienne();
+       Typy_lancuchowe();
     }
 
     private static void Zmienne()
@@ -40,6 +40,15 @@ internal class Program
 
         char znak = 'A';
         Console.WriteLine($"Znak: {znak}");
+    }
+
+    static void Typy_lancuchowe()
+    {
+        string imie = "Jan";
+        Console.WriteLine($"Imię: {imie}");
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.Append(" World");
+        Console.WriteLine(sb.ToString());
     }
 
 }
